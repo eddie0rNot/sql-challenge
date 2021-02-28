@@ -8,7 +8,9 @@ Contents:
 
 -Jupyter Notebook to inspect csv files
 
--pg admin file containing SQL code
+-2 pgAdmin files containing SQL code
+  - 1 file to load tables
+  - 1 file for main homework queries
 
 -pdf of ERD relationships
 
