@@ -35,11 +35,29 @@ employees.emp_no = dept_manager.emp_no;
 
 -- List the department of each employee with the following information: 
 --   employee number, last name, first name, and department name
-
+SELECT 
+  employees.emp_no,
+  employees.last_name,
+  employees.first_name,
+  departments.dept_name
+FROM employee_db.departments
+JOIN employee_db.dept_emp ON
+departments.dept_no = dept_emp.dept_no
+JOIN employee_db.employees ON
+employees.emp_no = dept_emp.emp_no
+ORDER BY employees.emp_no ASC;
 
 -- List first name, last name, and sex for employees whose first name is:
 --   "Hercules" and last names begin with "B."
-
+SELECT
+  employees.first_name,
+  employees.last_name,
+  employees.sex
+FROM employee_db.employees
+WHERE 
+employees.first_name = 'Hercules'
+AND 
+employees.last_name LIKE 'B%';
 
 -- List all employees in the Sales department, including their: 
 --   employee number, last name, first name, and department name
