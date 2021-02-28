@@ -4,6 +4,8 @@
 
 Contents:
 
+-EmployeeSQL folder containing csv files
+
 -Jupyter Notebook to inspect csv files
 
 -pg admin file containing SQL code
